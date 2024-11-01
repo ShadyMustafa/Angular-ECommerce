@@ -1,0 +1,14 @@
+.cartBody{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 40px;
+    border-bottom: 2px solid;
+    
+}
+img{
+    width: 100px;
+    border-radius: 50px;
+    margin-top: 150px;
+}

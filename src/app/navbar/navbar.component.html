@@ -1,0 +1,11 @@
+<div class="navBody">
+    <nav class="nav">
+        <h1 routerLink="/products">E-Store</h1>
+        <ul>
+            <li><a routerLink="/products">Products</a></li>
+            <li><a routerLink="/cart">Cart</a><span *ngIf="cartCount>0">{{cartCount}}</span></li>
+           
+        </ul>
+    </nav>
+</div>
+<router-outlet></router-outlet>

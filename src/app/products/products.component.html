@@ -1,0 +1,19 @@
+
+    <select (change)="sortByCategory()" [(ngModel)]="sortType ">
+        <option>All</option>
+        <option value="jeans">Jeans</option>
+        <option value="Shirts">Shirt</option>
+        <option value="sneakers">Sneaker</option>
+    </select>
+    <div class="header">
+        <h1 style="text-align: center;">Our Products</h1>
+        <input type="search" [(ngModel)]="searchText" (input)="search()"  >
+    </div>
+    
+    <div  class="productsBody">
+        <div class="list" *ngFor="let p of filteredProducts">
+            <img [src]="p.imageUrl" alt="p.name" width="350px" height="350px">
+            <h3>{{p.name}}</h3>
+            <button (click)="addCart(p)">Add To cart</button>
+        </div>
+    </div>

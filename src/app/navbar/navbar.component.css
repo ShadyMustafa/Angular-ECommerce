@@ -1,0 +1,34 @@
+.navBody{
+    background-color: rgb(26, 26, 26);
+    padding: 15px;
+    position: fixed;
+    width: 100%;  
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right:40px ;  
+}
+.nav ul{
+    display: flex;
+    gap: 300px;
+}
+.nav h1{
+    color: white;
+    font-size: 3rem;
+    cursor: pointer;
+}
+.nav ul a{
+    color: aliceblue;
+    font-size: 2rem;
+}
+span{
+    color: white;
+    background-color: red;
+    padding: 4px;
+    border-radius: 50%;
+    width: 500  px;
+    height: 50px;
+    font-size:20px ;
+}
